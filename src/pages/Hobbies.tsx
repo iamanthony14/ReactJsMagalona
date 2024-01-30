@@ -58,9 +58,7 @@ export default function Hobbies() {
                 <div className="portfolio-layer">
                   <h4>Coding</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{" "}
+                    
                   </p>
                  
                 </div>
@@ -71,9 +69,7 @@ export default function Hobbies() {
                 <div className="portfolio-layer">
                   <h4>Watching Anime</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{" "}
+                    
                   </p>
                   
                 </div>
@@ -84,9 +80,7 @@ export default function Hobbies() {
                 <div className="portfolio-layer">
                   <h4>Playing Guitar</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{" "}
+                    
                   </p>
                   
                 </div>
@@ -97,9 +91,7 @@ export default function Hobbies() {
                 <div className="portfolio-layer">
                   <h4>Diving</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{" "}
+                    
                   </p>
                   
                 </div>
@@ -110,9 +102,7 @@ export default function Hobbies() {
                 <div className="portfolio-layer">
                   <h4>Gaming</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{" "}
+                    
                   </p>
                   
                 </div>
@@ -123,9 +113,7 @@ export default function Hobbies() {
                 <div className="portfolio-layer">
                   <h4>Reading</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{" "}
+                    
                   </p>
                   
                 </div>
