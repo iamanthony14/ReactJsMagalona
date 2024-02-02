@@ -129,21 +129,27 @@ p {
 /******************** Hobbies *****************************/
 .heroblack {
   height: 80vh;
-  display: flex;
-  background-size: cover;
-  flex-direction: row;
   justify-content: center;
   
 }
+.heroblack2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 .hobbies{
-  display: flex;
-  flex-direction: row;
+  font-size:1rem;
   padding-bottom: 100px;
 }
 .myimg{
-  width: 300px;
+  object-fit: fill;
+  width: 25%;
   /* transition: transform 0.4s ease-in-out; */
   animation: floatImage 4s ease-in-out infinite;
+}
+.myname{
+  font-size: 2em;
+  word-wrap: break-word;
 }
 @keyframes floatImage {
   0%{
@@ -166,12 +172,12 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2em;
+  height: 2em;
   background: transparent;
-  border: .2rem solid rgb(0, 213, 241);
+  border: .1rem solid rgb(0, 213, 241);
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 1em;
   color: rgb(0, 213, 241);
   margin: 2rem 1.1rem 2rem 0;
   transition: .5s ease;
@@ -313,12 +319,7 @@ p {
 
 
 /****************** Calculator *******************/
-.samplemain{
 
-}
-.samplechild{
-
-}
 .calcumain{
   display: flex;
   height: 90vh;
@@ -329,20 +330,19 @@ p {
   justify-content: center;
   width: 350px;
   margin: auto;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  
   text-align: center;
 }
 
 .input {
-  font-size: 24px;
+  font-size: 42px;
   margin-bottom: 10px;
   padding: 10px;
   border: none;
   outline: none;
   width: 100%;
   text-align: right;
-  height: 50px;
+  height: 80px;
   color: #f9f9f9;
 }
 
@@ -378,8 +378,8 @@ p {
 }
 .btnspecial:hover{
   color: rgb(0, 213, 241);
-  box-shadow: 0 0 5px rgb(0, 213, 241);
-  text-shadow: 0 0 5px rgb(0, 213, 241);
+  box-shadow: 0 0 20px rgb(0, 213, 241);
+  text-shadow: 0 0 20px rgb(0, 213, 241);
 }
 .btnspecial::before{
   content: '';
@@ -390,12 +390,12 @@ p {
   height: 100%;
   border-radius: 50%;
   background: rgb(0, 213, 241);
-  transition: .5s;
-  transform: scale(.9);
+  transition: 0.5s;
+  transform: scale(0.9);
   z-index: -2;
 }
 
 .btnspecial:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px rgb(0, 213, 241);
+  box-shadow: 0 0 20px rgb(0, 213, 241);
 }
