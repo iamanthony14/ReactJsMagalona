@@ -12,6 +12,7 @@ const CustomNavbar = () => {
             <Nav.Link href="/" className={currentPath === '/' ? 'active' : ''}>Home</Nav.Link>
             <Nav.Link href="/Calculator" className={currentPath === '/Calculator' ? 'active' : ''}>Calculator</Nav.Link>
             <Nav.Link href="/Json" className={currentPath === '/Json' ? 'active' : ''}>JSON</Nav.Link>
+            <Nav.Link href="/Hobbies" className={currentPath === '/Hobbies' ? 'active' : ''}>Hobbies</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

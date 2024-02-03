@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import CustomNavbar from "../components/Navbar";
 import UserCard from "../components/JsonCards";
 
@@ -51,10 +51,11 @@ const JsonComponent: React.FC = () => {
   return (
     <>
       <CustomNavbar />
+      <div className="titletop">
+        <h1>JSON DATA</h1>
+      </div>
       <Container>
         <div className="jsoncont">
-          <h2>JSON Data</h2>
-
           {users.length === 0 ? (
             <p>Loading...</p>
           ) : (

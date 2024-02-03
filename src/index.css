@@ -34,13 +34,6 @@ body {
 
 /** Own CSS **/
 
-/* .text-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-} */
 .logo {
   font-size: 1.5rem;
   color: rgb(203, 203, 203);
@@ -51,6 +44,21 @@ body {
   font-size: 1.7rem;
   color: rgb(0, 213, 241)
 
+}
+.titletop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+  background-image: url("./public/abstract.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  margin: 0%;
+  height: 150px;
+  word-wrap: break-word;
+  
 }
 
 .hero {
@@ -127,24 +135,18 @@ p {
 }
 
 /******************** Hobbies *****************************/
-.heroblack {
-  height: 80vh;
-  justify-content: center;
-  
-}
-.heroblack2 {
+
+.firstdiv{
   position: relative;
   text-align: center;
   margin-bottom: 2rem;
   
-}
-.firstdiv{
   background-image: url("./public/abstract.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 1rem;
   margin: 0%;
-  height: 95vh;
+  height: 100%;
   
 }
 .firstdiv:before{
@@ -336,7 +338,7 @@ p {
 
 .calcumain{
   display: flex;
-  height: 90vh;
+  height: 70vh;
 }
 
 .calculator {
@@ -358,6 +360,9 @@ p {
   text-align: right;
   height: 80px;
   color: #f9f9f9;
+  max-width: 100%; 
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .buttons {
@@ -436,6 +441,7 @@ p {
 
 .jsoncont{
   margin-top: 50px;
+  text-align: center;
 }
 
 

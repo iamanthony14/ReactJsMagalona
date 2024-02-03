@@ -13,6 +13,9 @@ export default function Calculator() {
       // Check if the current input is '0' and the new value is also '0'
       if (input === "0" && value === "0") {
         // Do nothing (prevent adding multiple zeros)
+      } else if (input === "0") {
+        // If the current input is '0' and the new value is not '0', replace '0' with the new value
+        setInput(value);
       } else {
         setInput((prevInput) => prevInput + value);
       }
@@ -35,6 +38,9 @@ export default function Calculator() {
   return (
     <>
       <CustomNavbar />
+      <div className="titletop">
+        <h1>CALCULATOR</h1>
+      </div>
       <Container>
         <div className="calcumain">
           <div className="calculator">
