@@ -1,7 +1,11 @@
 import { Container } from "react-bootstrap";
 import CustomNavbar from "../components/Navbar";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import BotButton from "../components/BotButton";
+
+
 export default function Hobbies() {
+  
   const [text] = useTypewriter({
     words: [
       "Web Developer",
@@ -101,7 +105,9 @@ export default function Hobbies() {
         </div>
 
         <div></div>
+        
       </Container>
+      <BotButton modalTitle="Daily Reminder" modalImageSrc={"/notes.jpg"}  />
     </>
   );
 }

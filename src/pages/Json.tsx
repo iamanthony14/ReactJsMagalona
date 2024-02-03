@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col, Container } from "react-bootstrap";
 import CustomNavbar from "../components/Navbar";
 import UserCard from "../components/JsonCards";
+import BotButton from "../components/BotButton";
 
 interface User {
   id: number;
@@ -69,6 +70,7 @@ const JsonComponent: React.FC = () => {
           )}
         </div>
       </Container>
+      <BotButton modalTitle="Daily Reminder" modalImageSrc={""} />
     </>
   );
 };

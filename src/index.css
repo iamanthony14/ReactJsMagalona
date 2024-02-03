@@ -33,12 +33,31 @@ body {
 }
 
 /** Own CSS **/
+.clickme {
+  background-color : #46b7da00;
+  padding: 10px 20px;
+  border: 0;
+}
 
+.botbutton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.butimg{
+  height: 4em;
+}
+.dailynotes{
+  width: 100%;
+}
 .logo {
   font-size: 1.5rem;
   color: rgb(203, 203, 203);
   font-weight: 600;
   cursor: default;
+}
+.logoimg{
+  height: 1.5em;
 }
 .logo b{
   font-size: 1.7rem;

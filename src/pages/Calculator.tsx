@@ -1,7 +1,8 @@
 import { useState } from "react";
 import CustomNavbar from "../components/Navbar";
 import { Container } from "react-bootstrap";
-import Button from "../components/CalcButton"; 
+import Button from "../components/CalcButton";
+import BotButton from "../components/BotButton";
 
 export default function Calculator() {
   const [input, setInput] = useState("");
@@ -26,7 +27,6 @@ export default function Calculator() {
   const handleReset = () => {
     setInput("0");
   };
-
 
   const handleEvaluate = () => {
     try {
@@ -68,10 +68,10 @@ export default function Calculator() {
               <Button label="0" onClick={() => handleClick("0")} />
               <Button label="=" onClick={handleEvaluate} />
               <Button label="+" onClick={() => handleClick("+")} />
-             
             </div>
           </div>
         </div>
+        <BotButton modalTitle="Daily Reminder" modalImageSrc={""} />
       </Container>
     </>
   );

@@ -1,14 +1,8 @@
-import {
-  Container,
-  Button,
-  Row,
-  Col,
-  Form
-} from "react-bootstrap";
+import { Container, Button, Row, Col, Form } from "react-bootstrap";
 import CustomNavbar from "../components/Navbar";
+import BotButton from "../components/BotButton";
 
 export default function Home() {
-  
   return (
     <>
       <CustomNavbar />
@@ -16,17 +10,20 @@ export default function Home() {
         <div className="text-center">
           <Container className="mt-5">
             <h1>Digital Transformation</h1>
-            <Form className="mt-5" >
+            <Form className="mt-5">
               <Form.Group
                 as={Row}
                 className="mb-3"
-                controlId="formPlaintextPassword"
-              >
+                controlId="formPlaintextPassword">
                 <Form.Label column sm="2">
                   <p>Created By</p>
                 </Form.Label>
                 <Col sm="10">
-                  <Form.Control type="text" className="custom-input" placeholder="Full Name"/>
+                  <Form.Control
+                    type="text"
+                    className="custom-input"
+                    placeholder="Full Name"
+                  />
                 </Col>
               </Form.Group>
             </Form>
@@ -51,15 +48,18 @@ export default function Home() {
               <div className="cardblurcont ">
                 <h2>My Hobbies</h2>
                 <p>
-                  Hi! My name is John. By clicking the button below you will learn
-                  more about me.
+                  Hi! My name is John. By clicking the button below you will
+                  learn more about me.
                 </p>
-                <Button variant="secondary" href="Hobbies">Learn More</Button>
+                <Button variant="secondary" href="Hobbies">
+                  Learn More
+                </Button>
               </div>
             </Container>
           </Container>
         </div>
       </div>
+      <BotButton modalTitle="Daily Reminder" modalImageSrc={""} />
     </>
   );
 }
