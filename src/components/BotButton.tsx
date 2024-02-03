@@ -45,7 +45,7 @@ const BotButton: React.FC<BotButtonProps> = ({ modalTitle, modalImageSrc }) => {
             <Modal.Header closeButton>
               <Modal.Title>{modalTitle}</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body className='modalbody'>
               <img className="dailynotes" src={currentImageSrc} alt="" />
             </Modal.Body>
             <Modal.Footer>

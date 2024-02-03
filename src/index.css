@@ -45,10 +45,13 @@ body {
   right: 10px;
 }
 .butimg{
-  height: 4em;
+  height: 3.5em;
 }
 .dailynotes{
-  width: 100%;
+  height: 450px;
+}
+.modalbody{
+  text-align: center;
 }
 .logo {
   font-size: 1.5rem;
