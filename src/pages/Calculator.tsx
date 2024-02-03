@@ -10,11 +10,12 @@ export default function Calculator() {
     if (input === "Error") {
       setInput(value);
     } else {
-      // Check if the current input is '0' and the new value is also '0'
-      if (input === "0" && value === "0") {
+      // Check if the current input is the result and the clicked value is an operator
+      if (/[-+*/]/.test(value) && /[0-9]/.test(input)) {
+        setInput((prevInput) => prevInput + value);
+      } else if (input === "0" && value === "0") {
         // Do nothing (prevent adding multiple zeros)
       } else if (input === "0") {
-        // If the current input is '0' and the new value is not '0', replace '0' with the new value
         setInput(value);
       } else {
         setInput((prevInput) => prevInput + value);
@@ -23,7 +24,7 @@ export default function Calculator() {
   };
 
   const handleReset = () => {
-    setInput("");
+    setInput("0");
   };
 
 
