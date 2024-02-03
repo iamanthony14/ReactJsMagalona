@@ -2,7 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -14,6 +13,7 @@
 }
 body {
   background-color: #242424;
+  
 }
 /* width */
 ::-webkit-scrollbar {
@@ -52,6 +52,7 @@ body {
   color: rgb(0, 213, 241)
 
 }
+
 .hero {
   height: 90vh;
   display: flex;
@@ -109,7 +110,7 @@ body {
   margin-bottom: 30px;
 }
 h1 {
-  font-size: 3.2em;
+  font-size: 2.7rem;
   line-height: 1.1;
   color: antiquewhite;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.855);
@@ -125,7 +126,6 @@ p {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.855);
 }
 
-
 /******************** Hobbies *****************************/
 .heroblack {
   height: 80vh;
@@ -136,14 +136,28 @@ p {
   position: relative;
   text-align: center;
   margin-bottom: 2rem;
+  
 }
+.firstdiv{
+  background-image: url("./public/abstract.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  margin: 0%;
+  height: 95vh;
+  
+}
+.firstdiv:before{
+  opacity: 0.9;
+}
+
 .hobbies{
   font-size:1rem;
   padding-bottom: 100px;
 }
 .myimg{
   object-fit: fill;
-  width: 25%;
+  width: 23%;
   /* transition: transform 0.4s ease-in-out; */
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -373,7 +387,7 @@ p {
   background: #333;
   border-radius: 50%;
   font-size: 30px;
-  color: #666;
+  color: #ffffff;
   transition: .5s;
 }
 .btnspecial:hover{
@@ -399,3 +413,107 @@ p {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgb(0, 213, 241);
 }
+
+@media (max-width: 380px){
+  .btnspecial {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .calculator {
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin: auto;
+    
+    text-align: center;
+  }
+}
+
+
+/**************** JSON ***********************/
+
+
+.jsoncont{
+  margin-top: 50px;
+}
+
+
+.card-containers {
+	background-color: #4d4d4d;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+  border: 2px solid #03BFCB;
+}
+
+.card-containers .pro {
+	color: #231E39;
+	background-color: rgb(0, 213, 241);
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card-containers .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+.skills {
+	background-color: #202020;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+.round{
+  width: 90px;
+}
+
+
+
+
+
+
+

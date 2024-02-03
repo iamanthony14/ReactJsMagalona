@@ -1,21 +1,28 @@
 import { useState } from "react";
 import CustomNavbar from "../components/Navbar";
 import { Container } from "react-bootstrap";
+import Button from "../components/CalcButton"; 
 
 export default function Calculator() {
   const [input, setInput] = useState("");
 
   const handleClick = (value: string) => {
-    setInput((prevInput) => prevInput + value);
+    if (input === "Error") {
+      setInput(value);
+    } else {
+      // Check if the current input is '0' and the new value is also '0'
+      if (input === "0" && value === "0") {
+        // Do nothing (prevent adding multiple zeros)
+      } else {
+        setInput((prevInput) => prevInput + value);
+      }
+    }
   };
 
   const handleReset = () => {
     setInput("");
   };
 
-  // const handleClearEntry = () => {
-  //   setInput((prevInput) => prevInput.slice(0, -1));
-  // };
 
   const handleEvaluate = () => {
     try {
@@ -35,87 +42,25 @@ export default function Calculator() {
               {input}
             </div>
             <div className="buttons">
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("7")}>
-                7
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("8")}>
-                8
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("9")}>
-                9
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("/")}>
-                ÷
-              </button>
+              <Button label="7" onClick={() => handleClick("7")} />
+              <Button label="8" onClick={() => handleClick("8")} />
+              <Button label="9" onClick={() => handleClick("9")} />
+              <Button label="÷" onClick={() => handleClick("/")} />
 
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("4")}>
-                4
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("5")}>
-                5
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("6")}>
-                6
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("*")}>
-                ×
-              </button>
+              <Button label="4" onClick={() => handleClick("4")} />
+              <Button label="5" onClick={() => handleClick("5")} />
+              <Button label="6" onClick={() => handleClick("6")} />
+              <Button label="×" onClick={() => handleClick("*")} />
 
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("1")}>
-                1
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("2")}>
-                2
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("3")}>
-                3
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("-")}>
-                -
-              </button>
+              <Button label="1" onClick={() => handleClick("1")} />
+              <Button label="2" onClick={() => handleClick("2")} />
+              <Button label="3" onClick={() => handleClick("3")} />
+              <Button label="-" onClick={() => handleClick("-")} />
 
-              <button className="btn btncal btnspecial" onClick={handleReset}>
-                C
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("0")}>
-                0
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={handleEvaluate}>
-                =
-              </button>
-              <button
-                className="btn btncal btnspecial"
-                onClick={() => handleClick("+")}>
-                +
-              </button>
+              <Button label="C" onClick={handleReset} />
+              <Button label="0" onClick={() => handleClick("0")} />
+              <Button label="=" onClick={handleEvaluate} />
+              <Button label="+" onClick={() => handleClick("+")} />
              
             </div>
           </div>
