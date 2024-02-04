@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import CustomNavbar from "../components/Navbar";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BotButton from "../components/BotButton";
-
+import PortfolioBox from '../components/PortfolioBox';
 
 export default function Hobbies() {
   
@@ -53,53 +53,12 @@ export default function Hobbies() {
             <h2 className="heading">My Hobbies</h2>
 
             <div className="portfolio-container">
-              <div className="portfolio-box">
-                <img src="coding.png" alt="" />
-                <div className="portfolio-layer">
-                  <h4>Coding</h4>
-                  <p></p>
-                </div>
-              </div>
-
-              <div className="portfolio-box">
-                <img src="anime.png" alt="" />
-                <div className="portfolio-layer">
-                  <h4>Watching Anime</h4>
-                  <p></p>
-                </div>
-              </div>
-
-              <div className="portfolio-box">
-                <img src="guitar.jpg" alt="" />
-                <div className="portfolio-layer">
-                  <h4>Playing Guitar</h4>
-                  <p></p>
-                </div>
-              </div>
-
-              <div className="portfolio-box">
-                <img src="diving.jpg" alt="" />
-                <div className="portfolio-layer">
-                  <h4>Diving</h4>
-                  <p></p>
-                </div>
-              </div>
-
-              <div className="portfolio-box">
-                <img src="gaming.jpeg" alt="" />
-                <div className="portfolio-layer">
-                  <h4>Gaming</h4>
-                  <p></p>
-                </div>
-              </div>
-
-              <div className="portfolio-box">
-                <img src="read.jpg" alt="" />
-                <div className="portfolio-layer">
-                  <h4>Reading</h4>
-                  <p></p>
-                </div>
-              </div>
+              <PortfolioBox imageSrc="coding.png" title="Coding" />
+              <PortfolioBox imageSrc="anime.png" title="Watching Anime" />
+              <PortfolioBox imageSrc="guitar.jpg" title="Playing Guitar" />
+              <PortfolioBox imageSrc="diving.jpg" title="Diving" />
+              <PortfolioBox imageSrc="gaming.jpeg" title="Gaming" />
+              <PortfolioBox imageSrc="read.jpg" title="Reading" />
             </div>
           </section>
         </div>
