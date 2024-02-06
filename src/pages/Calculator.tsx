@@ -8,14 +8,21 @@ export default function Calculator() {
   const [input, setInput] = useState("");
 
   const handleClick = (value: string) => {
-    if (input === "Error") {
+    if (input === "Error" || input === "Infinity") {
       setInput(value);
     } else {
       // Check if the current input is the result and the clicked value is an operator
       if (/[-+*/]/.test(value) && /[0-9]/.test(input)) {
-        setInput((prevInput) => prevInput + value);
+        // Check if last character of input is an operator
+        if (/[-+*/]$/.test(input)) {
+          setInput((prevInput) => prevInput.slice(0, -1) + value); // Replace the last operator
+        } else {
+          setInput((prevInput) => prevInput + value);
+        }
       } else if (input === "0" && value === "0") {
         // Do nothing (prevent adding multiple zeros)
+      } else if (/[-+*/]$/.test(input) && value === "0") {
+        // Do nothing (prevent adding zero after operator)
       } else if (input === "0") {
         setInput(value);
       } else {
