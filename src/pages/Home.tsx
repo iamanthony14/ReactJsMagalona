@@ -28,16 +28,16 @@ export default function Home() {
               </Form.Group>
             </Form>
             <Row className="mt-3">
-              <Col xs={6}>
+              <Col s={6}>
                 <div className="d-grid gap-2 ">
-                  <Button href="Calculator" variant="dark" size="lg">
+                  <Button href="Calculator" className="btntxt" variant="dark" size="lg">
                     Calculator Sample
                   </Button>
                 </div>
               </Col>
-              <Col xs={6}>
+              <Col s={6}>
                 <div className="d-grid gap-2">
-                  <Button href="Json" variant="dark" size="lg">
+                  <Button href="Json" className="btntxt" variant="dark" size="lg">
                     JSON Sample
                   </Button>
                 </div>

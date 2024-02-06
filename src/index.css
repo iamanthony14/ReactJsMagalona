@@ -10,6 +10,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 body {
   background-color: #242424;
@@ -87,9 +88,9 @@ body {
   display: flex;
   background-image: url("./pages/bg.png");
   background-size: cover;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  
 }
 .heroblack {
   height: 80vh;
@@ -101,7 +102,9 @@ body {
 }
 .text-center{
   text-align: center;
+  width: 55rem;
 }
+
 .cardblur {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.1);
@@ -154,6 +157,34 @@ p {
   color: antiquewhite;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.855);
 }
+@media (max-width: 980px){
+  .text-center{
+    width: 90vw;
+  }
+}
+@media (max-width: 515px){
+  .d-grid .btntxt {
+    font-size: 4vw;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  .mt-5 > h1{
+    font-size: 1.8em;
+    word-break: break-word;
+  }
+  .text-center{
+    width: 90vw;
+  }
+  .hero{
+    width: auto;
+    height: 91vh;
+  }
+  .cardblur {
+    margin-bottom: 40px;
+  }
+
+}
+
 
 /******************** Hobbies *****************************/
 
@@ -168,6 +199,8 @@ p {
   padding-top: 1rem;
   margin: 0%;
   height: 100%;
+  background-attachment: fixed;
+  background-position: center;
   
 }
 .firstdiv:before{
@@ -186,7 +219,7 @@ p {
 }
 .myname{
   font-size: 2em;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 @keyframes floatImage {
   0%{
@@ -229,10 +262,12 @@ p {
 
 .portfolio {
   background: var(--second-bg-color);
+  text-align: center;
 }
 
 .portfolio h2 {
   margin-bottom: 4rem;
+
 }
 
 .portfolio-container {
@@ -308,6 +343,7 @@ p {
 }
 
 @media (max-width: 991px){
+  
   .portfolio-container {
     grid-template-columns: repeat(2,1fr);
 }
@@ -326,6 +362,11 @@ p {
 }
 
 @media (max-width: 768px){
+ 
+  .myimg{
+    width: 40%;
+    /* transition: transform 0.4s ease-in-out; */
+  }
   .portfolio-container {
     grid-template-columns: repeat(2,1fr);
 }
@@ -340,6 +381,11 @@ p {
 }
 }
 @media (max-width: 617px){
+  
+  .myimg{
+    width: 45%;
+    /* transition: transform 0.4s ease-in-out; */
+  }
   .portfolio-container {
       grid-template-columns: 1fr;
   }
@@ -352,6 +398,27 @@ p {
     font-size: 1rem;
     margin: .3rem 0 1rem;
   }
+  
+}
+@media (max-width: 360px){
+  
+  .myimg{
+    width: 70%;
+    /* transition: transform 0.4s ease-in-out; */
+  }
+  .portfolio-container {
+      grid-template-columns: 1fr;
+  }
+  .portfolio-layer h4 {
+    font-size: 2rem;
+    color: antiquewhite;
+  }
+  
+  .portfolio-layer p {
+    font-size: 1rem;
+    margin: .3rem 0 1rem;
+  }
+  
 }
 
 
@@ -359,7 +426,8 @@ p {
 
 .calcumain{
   display: flex;
-  height: 65vh;
+  height: 75vh;
+  margin-bottom: 20px;
 }
 
 .calculator {
@@ -440,6 +508,13 @@ p {
   box-shadow: 0 0 20px rgb(0, 213, 241);
 }
 
+@media (max-width: 525px){
+  .botbutton{
+    display: none;
+  }
+  
+}
+
 @media (max-width: 380px){
   .btnspecial {
     width: 60px;
@@ -454,6 +529,7 @@ p {
     
     text-align: center;
   }
+  
 }
 
 
@@ -478,7 +554,10 @@ p {
 	text-align: center;
   border: 2px solid #03BFCB;
 }
-
+.card-containers > h3{
+  white-space: nowrap;
+  font-size: 20px;
+}
 .card-containers .pro {
 	color: #231E39;
 	background-color: rgb(0, 213, 241);

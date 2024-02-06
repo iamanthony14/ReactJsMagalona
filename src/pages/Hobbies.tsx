@@ -50,7 +50,7 @@ export default function Hobbies() {
       <Container>
         <div className="hobbies">
           <section className="portfolio" id="portfolio">
-            <h2 className="heading">My Hobbies</h2>
+            <h2 className="heading">MY HOBBIES</h2>
 
             <div className="portfolio-container">
               <PortfolioBox imageSrc="coding.png" title="Coding" />
