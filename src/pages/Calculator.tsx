@@ -21,9 +21,12 @@ export default function Calculator() {
         }
       } else if (input === "0" && value === "0") {
         // Do nothing (prevent adding multiple zeros)
-      } else if (/[-+*/]$/.test(input) && value === "0") {
+      } else if (/[-+*/]0$/.test(input) && value === "0") {
         // Do nothing (prevent adding zero after operator)
-      } else if (input === "0") {
+      } else if (/[-+*/]0$/.test(input) && value !== "0") {
+        // Replace the trailing zero with the clicked value if it's not zero
+        setInput((prevInput) => prevInput.slice(0, -1) + value);
+      }  else if (input === "0") {
         setInput(value);
       } else {
         setInput((prevInput) => prevInput + value);
