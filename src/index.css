@@ -426,8 +426,7 @@ p {
 
 .calcumain{
   display: flex;
-  height: 75vh;
-  margin-bottom: 20px;
+  height: 67vh;
 }
 
 .calculator {
@@ -435,6 +434,7 @@ p {
   justify-content: center;
   width: 350px;
   margin: auto;
+  margin-top: 30px;
   
   text-align: center;
 }
@@ -444,6 +444,7 @@ p {
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid rgb(0, 213, 241);
+  border-radius: 20px;
   outline: none;
   width: 100%;
   text-align: right;
@@ -452,6 +453,7 @@ p {
   max-width: 100%; 
   overflow-x: auto;
   overflow-y: hidden;
+  
 }
 
 .buttons {
@@ -526,7 +528,7 @@ p {
     justify-content: center;
     width: 250px;
     margin: auto;
-    
+    margin-top: 30px;
     text-align: center;
   }
   

@@ -19,6 +19,8 @@ export default function Calculator() {
         } else {
           setInput((prevInput) => prevInput + value); //If the last character is not an operator, simply append the clicked operator.
         }
+      } else if (input === "" && /[-+*/]/.test(value)) { 
+
       } else if (input === "0" && value === "0") { //If the input is "0" and the clicked value is also "0", do nothing to prevent adding multiple zeros.
         // Do nothing (prevent adding multiple zeros)
       } else if (/[-+*/]0$/.test(input) && value === "0") { //If the last character is an operator and the clicked value is "0", do nothing to prevent adding zero after the operator.
